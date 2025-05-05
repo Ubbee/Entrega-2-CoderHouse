@@ -95,3 +95,39 @@ main .contenedor img {
     }
     
 }
+
+/* estilos de desktop */
+@media screen and (min-width: 1024px) {
+    main .contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 10%);
+        gap: 10px;
+    }
+    
+
+    .contenedor .imagen-uno {
+        grid-column: span 2;
+        grid-row:  span 1;
+    }
+    
+    .contenedor .imagen-dos {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    
+    .contenedor .imagen-tres {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    
+    .contenedor .imagen-cuatro {
+        grid-column: span 1;
+    }
+    
+    .contenedor .imagen-cinco {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    
+}
