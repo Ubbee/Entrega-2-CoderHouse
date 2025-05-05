@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(19, 19, 75) !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+nav {
+    margin: 0px 50px;
+}
+
+header nav img {
+    width: 150px;
+}
+
+header nav ul li a {
+    margin: 0px 5px;
+    font-size: 1.1rem !important;
+    color: white !important;
+}
+
+header nav ul li:hover {
+    transform: translateY(1px);
+    transition: 0.2s;
+}
+nav button {
+    color: whitesmoke !important;
+}
+/* ---------FIN HEADER---------- */
+/* estilos de mobile */
+main {
+    padding: 5% 10%;
+}
+main .contenedor {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(7, 10%);
+    gap: 10px;
+}
+
+main h1 {
+    color: white;
+    border-bottom: 1PX solid whitesmoke;
+    margin-bottom: 20px;
+    width: 50%;
+    padding-bottom: 5px;
+    font-weight: 100;
+}
+main .contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenedor .imagen-uno {
+    grid-row: span 2;
+}
+.contenedor .imagen-cinco {
+    grid-row: span 2;
+}
+
+
