@@ -87,17 +87,14 @@ form{
     margin: 10% 25%;
     color: white;
 }
-/* -----------------------------*/
-
-
-/* estilos de mobile */
+/* -----------------------------------*/
+/* -----------estilos de mobile--------- */
 main {
     padding: 5% 10%;
 }
 main .contenedor {
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: repeat(7, 10%);
     gap: 10px;
 }
 
@@ -132,8 +129,7 @@ footer div ul li {
 footer div ul li img {
     width: 30px;
 }
-
-
+/* ---------------------------------------- */
 /* estilos de tablet */
 @media screen and (min-width: 600px) {
     main .contenedor{
@@ -172,39 +168,30 @@ footer div ul li img {
     }
     
 }
-
-/* estilos de desktop */
+/* ---------------------------------------- */
+/* -------------estilos de desktop---------- */
 @media screen and (min-width: 1024px) {
     main .contenedor {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 10%);
-        gap: 10px;
-    }
-    
-
+    }  
     .contenedor .imagen-uno {
         grid-column: span 2;
         grid-row:  span 1;
-    }
-    
+    }  
     .contenedor .imagen-dos {
         grid-column: span 1;
         grid-row: span 2;
-    }
-    
+    }   
     .contenedor .imagen-tres {
         grid-column: span 1;
         grid-row: span 2;
-    }
-    
+    }   
     .contenedor .imagen-cuatro {
         grid-column: span 1;
-    }
-    
+    }  
     .contenedor .imagen-cinco {
         grid-column: span 2;
         grid-row: span 1;
-    }
-    
-    
+    }  
 }
+/* ------------------------------- */
