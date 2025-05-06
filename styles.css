@@ -9,7 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
+/* ---------------HEADER------------------ */
 
 nav {
     margin: 0px 50px;
@@ -32,7 +32,64 @@ header nav ul li:hover {
 nav button {
     color: whitesmoke !important;
 }
-/* ---------FIN HEADER---------- */
+/* ------------------------------- */
+/* ---------------FOOTER------------------ */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+footer img{
+    width: 130px;
+}
+footer h2{
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+footer div ul li img {
+    width: 30px;
+}
+/* ------------------------------- */
+
+/* ----------------HTML NOSOTROS------------- */
+.tit-nos {
+    text-align: center;
+    color: white !important;
+    border-bottom: 1px solid white;
+    width: 60% !important;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+p {
+    color: white;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 50px 20% !important;
+    line-height:1.3;
+}
+/* -----------------------------*/
+
+/* ----------------HTML CONTACTO------------- */
+.tit-cont {
+    text-align: center;
+    color: white !important;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+form{
+    margin: 10% 25%;
+    color: white;
+}
+/* -----------------------------*/
+
+
 /* estilos de mobile */
 main {
     padding: 5% 10%;
@@ -64,6 +121,19 @@ main .contenedor img {
     grid-row: span 2;
 }
 
+footer div ul{
+    display: flex;
+    flex-direction: column;
+}
+footer div ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+footer div ul li img {
+    width: 30px;
+}
+
+
 /* estilos de tablet */
 @media screen and (min-width: 600px) {
     main .contenedor{
@@ -92,6 +162,13 @@ main .contenedor img {
     .contenedor .imagen-cinco {
         grid-column: span 1;
         grid-row: span 1;
+    }
+
+    footer div ul{
+        flex-direction: row;
+    }
+    footer div ul li {
+        margin: 0px 5px;
     }
     
 }
