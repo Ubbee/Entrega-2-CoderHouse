@@ -29,21 +29,25 @@ header nav ul li:hover {
     transform: translateY(1px);
     transition: 0.2s;
 }
+
 nav button {
     color: whitesmoke !important;
 }
+
 /* ------------------------------- */
 /* ---------------FOOTER------------------ */
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 0px 5% 0px 5%;
 }
-footer img{
+
+footer img {
     width: 130px;
 }
-footer h2{
+
+footer h2 {
     color: whitesmoke;
     font-weight: 100;
     font-size: 1rem;
@@ -52,14 +56,13 @@ footer h2{
 footer div ul li img {
     width: 30px;
 }
+
 /* ------------------------------- */
 
 /* ----------------HTML NOSOTROS------------- */
 .tit-nos {
     text-align: center;
-    color: white !important;
-    border-bottom: 1px solid white;
-    width: 60% !important;
+    width: 70% !important;
     margin: auto;
     padding-bottom: 10px;
 }
@@ -69,8 +72,9 @@ p {
     font-size: 1.4rem;
     text-align: justify;
     margin: 50px 20% !important;
-    line-height:1.3;
+    line-height: 1.3;
 }
+
 /* -----------------------------*/
 
 /* ----------------HTML CONTACTO------------- */
@@ -83,18 +87,27 @@ p {
     margin: auto;
     padding-bottom: 10px;
 }
-form{
-    margin: 10% 25%;
+
+form {
+    margin: 10% 10%;
     color: white;
 }
+
 /* -----------------------------------*/
 /* -----------estilos de mobile--------- */
+.sobre-galeria h2 {
+    color: white;
+    font-size: 2.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 main {
     padding: 5% 10%;
 }
+
 main .contenedor {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -102,96 +115,121 @@ main h1 {
     color: white;
     border-bottom: 1PX solid whitesmoke;
     margin-bottom: 20px;
-    width: 50%;
+    width: 60%;
     padding-bottom: 5px;
     font-weight: 100;
 }
+
 main .contenedor img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+main .contenedor a:hover{
+transform: scale(0.99);
+transition: 0.3s;
+}
+
 .contenedor .imagen-uno {
     grid-row: span 2;
 }
+
 .contenedor .imagen-cinco {
     grid-row: span 2;
 }
 
-footer div ul{
+footer div ul {
     display: flex;
     flex-direction: column;
 }
+
 footer div ul li {
     margin-bottom: 10px;
     list-style: none;
 }
+
 footer div ul li img {
     width: 30px;
 }
+
 /* ---------------------------------------- */
 /* estilos de tablet */
 @media screen and (min-width: 600px) {
-    main .contenedor{
+    main .contenedor {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 10%);
     }
-    
+
     .contenedor .imagen-uno {
         grid-column: span 1;
-        grid-row:  span 1;
+        grid-row: span 1;
     }
-    
+
     .contenedor .imagen-dos {
         grid-column: span 1;
         grid-row: span 1;
     }
-    
+
     .contenedor .imagen-tres {
         grid-column: span 2;
     }
-    
+
     .contenedor .imagen-cuatro {
         grid-column: span 1;
     }
-    
+
     .contenedor .imagen-cinco {
         grid-column: span 1;
         grid-row: span 1;
     }
 
-    footer div ul{
+    footer div ul {
         flex-direction: row;
     }
+
     footer div ul li {
         margin: 0px 5px;
     }
-    
+
 }
+
 /* ---------------------------------------- */
 /* -------------estilos de desktop---------- */
 @media screen and (min-width: 1024px) {
     main .contenedor {
         grid-template-columns: 1fr 1fr 1fr;
-    }  
+    }
+
     .contenedor .imagen-uno {
         grid-column: span 2;
-        grid-row:  span 1;
-    }  
+        grid-row: span 1;
+    }
+
     .contenedor .imagen-dos {
         grid-column: span 1;
         grid-row: span 2;
-    }   
+    }
+
     .contenedor .imagen-tres {
         grid-column: span 1;
         grid-row: span 2;
-    }   
+    }
+
     .contenedor .imagen-cuatro {
         grid-column: span 1;
-    }  
+    }
+
     .contenedor .imagen-cinco {
         grid-column: span 2;
         grid-row: span 1;
-    }  
+    }
+
+    /* Seccion Contacto */
+    form {
+        margin: 10% 20%;
+        color: white;
+    }
+    /* ---------------- */
 }
+
 /* ------------------------------- */
